@@ -80,3 +80,24 @@
 
 
 ## 🌟What is the difference between preventDefault() and stopPropagation() methods?
+
+There is a big difference between them 
+
+### 🔹preventDefault()
+
+👉It is use when you really wanna stop the default character of the browers .
+
+👉Like for example we have already used in this MILESTONE for to delete the default character of form from reloading
+
+
+### 🔹stopPropagation()
+
+👉In short **stopPropagation()** means you will stop the _event bubbling_. 
+
+👉THat means that usually in event like clicking the event will go upwards means **button → div → body → document**. By **stopPropagation()** **you can just stop the event in any stage**
+
+🚦As you can see there is a significant difference 
+
+ ♦♦♦**preventDefault()** is use for stop the default character of the browers
+
+ ♦♦♦**stopPropagation()** is use for stop the event bubbling.
