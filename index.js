@@ -22,7 +22,7 @@ for(const call of calls){
         const realCoinNum = Number(document.getElementById('real-coin').innerText);
 
         if(realCoinNum < 20){
-            alert("Sorry you don't have sufficient coin, you need atleast 20 coins")
+            alert("❌ Sorry you don't have sufficient coin, you need atleast 20 coins")
             return;
         }
 
@@ -30,7 +30,7 @@ for(const call of calls){
         const number = call.parentNode.parentNode.children[3].innerText;
         const time = new Date().toLocaleTimeString()
         
-        alert("Calling "+ title +' '+number)
+        alert("📞 Calling "+ title +' '+number + '...')
         
         const newRealCoin = realCoinNum - 20;
         document.getElementById('real-coin').innerText = newRealCoin;
@@ -71,7 +71,7 @@ for(const btn of copyBtns){
     btn.addEventListener("click" , function(){
         
         const number = btn.parentNode.parentNode.children[3].innerText;
-        alert('You are copying the number: ' + number)
+        alert('✔ You are copying the number: ' + number)
         
         const realCopy = document.getElementById('copy-real-btn').innerText;
         const newCopy = Number(realCopy) + 1;
